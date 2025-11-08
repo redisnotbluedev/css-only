@@ -26,3 +26,15 @@ html::after {
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
+
+body {
+	background: blue;
+}
+
+body::before {
+	content: "Hover me!";
+}
+
+body:hover {
+	background: url("/static/img.jpg");
+}
