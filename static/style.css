@@ -1,3 +1,28 @@
 * {
-    background: blue;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+
+html {
+	height: 100vh;
+	background: radial-gradient(#333, black);
+}
+
+html::before {
+	content: "Pure CSS";
+	font-size: 2rem;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(50%, calc(-50% - 1lh));
+}
+
+html::after {
+	content: "This webpage was made using only CSS. No HTML, no JavaScript — just good old CSS.";
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(50%, -50%);
 }
