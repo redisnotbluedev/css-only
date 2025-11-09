@@ -1,5 +1,5 @@
 from flask import Flask, Response
-import random
+import random, time
 
 app = Flask(__name__)
 
@@ -19,6 +19,7 @@ def button_text():
 	response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
 	response.headers["Pragma"] = "no-cache"
 	response.headers["Expires"] = "0"
+	response.headers["ETag"] = f'"{time.time()}"'
 	return response
 
 if __name__ == "__main__":
