@@ -21,3 +21,7 @@ body::before {
 	width: 200px;
 	height: 100px;
 }
+
+body::before:active {
+	background: black;
+}
