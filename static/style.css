@@ -20,6 +20,7 @@ body::before {
 	border-radius: 10px;
 	width: 200px;
 	height: 100px;
+	pointer-events: auto;
 }
 
 body::before:active {
