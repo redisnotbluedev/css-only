@@ -11,18 +11,22 @@ html {
 body::before {
 	content: "";
 	display: block;
+	background: white url("/button_text.svg") center center no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: white url("/button_text.svg") center center no-repeat;
 	padding: 50px;
 	border-radius: 10px;
 	width: 200px;
 	height: 100px;
-	pointer-events: auto;
 }
 
-body::before:active {
+body:active::before {
 	background: black;
 }
