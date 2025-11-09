@@ -30,5 +30,6 @@ body {
 }
 
 body:active::before {
+	content: "";
 	background: black;
 }
