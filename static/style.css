@@ -13,10 +13,10 @@ body::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	content: url("/button_text.svg");
 	transform: translate(-50%, -50%);
-	background: white;
+	background: white url("/button_text.svg") center center no-repeat;
 	padding: 50px;
 	border-radius: 10px;
-	color: black;
+	width: 200px;
+	height: 100px;
 }
